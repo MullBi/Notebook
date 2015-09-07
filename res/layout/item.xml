@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_line_list" >
+
+            <TextView
+                android:id="@+id/Weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Title"
+                android:layout_alignBottom="@+id/Title"
+                android:layout_alignParentLeft="true"
+                android:text="@string/weather"
+                android:textSize="13sp"
+                android:textColor="#696969" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="168sp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Date"
+                android:layout_toRightOf="@+id/Weather"
+                android:layout_weight="0.95"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textSize="23sp"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#708090" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textSize="13sp"
+                android:textColor="#696969" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, NoteBookActivity!</string>
+    <string name="app_name">NoteBook</string>
+    <string name="weather">Weather</string>
+    <string name="notedate">NoteDate</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="jsb">记事本</string>
+    <string name="tjjsb">添加记事本</string>
+   </resources>

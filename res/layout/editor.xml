@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notepad_background_body"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/notepad_background_head"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/delete"
+            android:layout_alignBottom="@+id/delete"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_to_note_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Back"
+            android:layout_marginLeft="75dp"
+            android:layout_toRightOf="@+id/Back"
+            android:text="@string/jsb"
+            android:textColor="#d3d3d3"
+            android:textSize="23dp"
+             />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_delete_note" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/NoteDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/notedate"
+        android:textColor="#d3d3d3"
+        
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/weather"
+        android:textColor="#d3d3d3"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/NoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:textSize="23dp"
+        android:gravity="center" 
+        android:hint="标题"/>
+
+    <EditText
+        android:id="@+id/NoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NoteTitle"
+        android:layout_below="@+id/NoteTitle"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:textSize="23dp"
+        android:hint="内容" />
+
+</RelativeLayout>
